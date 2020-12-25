@@ -1,14 +1,18 @@
 <template>
   <div>
     <h3>第二个页面</h3>
-    <img class="headerimg"
-         src="https://www.zhanx.cn/sfmyimages/banner/banner3.jpg"
-         alt="">
+    <img
+      class="headerimg"
+      src="https://www.zhanx.cn/sfmyimages/banner/banner3.jpg"
+      alt=""
+    >
     <ul>
-      <li v-for="item in mineArr"
-          class="mineItem"
-          :key="item.lable"
-          v-on:click="itemClick(item)">
+      <li
+        v-for="item in mineArr"
+        class="mineItem"
+        :key="item.lable"
+        v-on:click="itemClick(item)"
+      >
         <span class="mineTitle">{{item.label}}</span>
         <i class="cubeic-arrow"></i>
       </li>
